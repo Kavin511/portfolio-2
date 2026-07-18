@@ -1,442 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Kavin Samiyappan | Android Engineer & Module Owner</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Android Engineer, Jetpack Compose, Kotlin, Module Owner, Zoho, Mobile Development" name="keywords">
-        <meta content="Android Engineer and Module Owner at Zoho with 3+ years building high-scale POS applications. Expert in Jetpack Compose, CLEAN Architecture, and performance optimization." name="description">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavin Samiyappan</title>
+    <meta name="description" content="Kavin Samiyappan — Android engineer in Chennai, building reliable products at scale.">
+    <meta name="author" content="Kavin Samiyappan">
+    <meta property="og:title" content="Kavin Samiyappan">
+    <meta property="og:description" content="Android engineer in Chennai, building reliable products at scale.">
+    <meta property="og:type" content="website">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='26' fill='%230c0c0e'/><text x='50' y='70' font-size='62' text-anchor='middle' fill='%23a5b0ff' font-family='Georgia,serif'>K</text></svg>">
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-        <!-- Font Awesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0c0c0e;
+            --ink: #ededf0;
+            --muted: #8b8b95;
+            --faint: #55555f;
+            --line: #202024;
+            --accent: #a5b0ff;
+        }
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            /* soft glow */
+            background-image: radial-gradient(70% 55% at 50% -8%, rgba(120,130,255,0.10), transparent 70%);
+            background-repeat: no-repeat;
+        }
 
-        <style>
-            :root {
-                --primary: #6366f1;
-                --primary-dark: #4f46e5;
-                --dark: #1e293b;
-                --gray: #64748b;
-                --light: #f8fafc;
-            }
-            
-            body { font-family: 'Inter', sans-serif; }
-            h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
-            
-            .highlight-card {
-                background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-                border-radius: 16px; padding: 24px; color: white;
-                margin-bottom: 20px; transition: transform 0.3s ease;
-            }
-            .highlight-card:hover { transform: translateY(-4px); }
-            .highlight-card .metric { font-size: 2.5rem; font-weight: 700; line-height: 1; }
-            .highlight-card .label { font-size: 0.875rem; opacity: 0.9; margin-top: 8px; }
-            
-            .initiative-card {
-                background: white; border: 1px solid #e2e8f0;
-                border-radius: 12px; padding: 24px; margin-bottom: 20px;
-                transition: all 0.3s ease;
-            }
-            .initiative-card:hover { border-color: var(--primary); box-shadow: 0 4px 20px rgba(99, 102, 241, 0.15); }
-            .initiative-card .badge {
-                background: #eef2ff; color: var(--primary);
-                padding: 4px 12px; border-radius: 20px;
-                font-size: 0.75rem; font-weight: 600;
-                margin-bottom: 12px; display: inline-block;
-            }
-            .initiative-card h5 { color: var(--dark); font-weight: 600; margin-bottom: 8px; }
-            .initiative-card p { color: var(--gray); font-size: 0.9rem; margin-bottom: 0; }
-            
-            .skill-tag {
-                display: inline-block; background: #f1f5f9; color: var(--dark);
-                padding: 8px 16px; border-radius: 8px; font-size: 0.875rem;
-                font-weight: 500; margin: 4px; transition: all 0.2s ease;
-            }
-            .skill-tag:hover { background: var(--primary); color: white; }
-            .skill-tag.primary { background: var(--primary); color: white; }
-            
-            .timeline-item {
-                position: relative; padding-left: 30px; padding-bottom: 30px;
-                border-left: 2px solid #e2e8f0;
-            }
-            .timeline-item:last-child { border-left: 2px solid transparent; }
-            .timeline-item::before {
-                content: ''; position: absolute; left: -8px; top: 0;
-                width: 14px; height: 14px; border-radius: 50%;
-                background: var(--primary); border: 3px solid white;
-                box-shadow: 0 0 0 2px var(--primary);
-            }
-            .timeline-item .date { color: var(--primary); font-weight: 600; font-size: 0.875rem; margin-bottom: 4px; }
-            .timeline-item .title { font-weight: 600; color: var(--dark); margin-bottom: 4px; }
-            .timeline-item .company { color: var(--gray); font-size: 0.9rem; margin-bottom: 12px; }
-            .timeline-item ul { color: var(--gray); font-size: 0.9rem; padding-left: 18px; }
-            .timeline-item ul li { margin-bottom: 6px; }
-            
-            .project-card {
-                background: white; border-radius: 16px; overflow: hidden;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-                transition: all 0.3s ease; height: 100%;
-            }
-            .project-card:hover { transform: translateY(-8px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
-            .project-card .project-content { padding: 24px; }
-            .project-card .project-type {
-                color: var(--primary); font-size: 0.75rem; font-weight: 600;
-                text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;
-            }
-            .project-card h5 { color: var(--dark); font-weight: 600; margin-bottom: 12px; }
-            .project-card p { color: var(--gray); font-size: 0.9rem; }
-            .project-card .project-link {
-                display: inline-flex; align-items: center; color: var(--primary);
-                font-weight: 500; font-size: 0.875rem; text-decoration: none; margin-top: 12px;
-            }
-            .project-card .project-link i { margin-left: 6px; transition: transform 0.2s ease; }
-            .project-card .project-link:hover i { transform: translateX(4px); }
-            
-            .section-subtitle {
-                color: var(--primary); font-weight: 600; font-size: 0.875rem;
-                text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;
-            }
-            
-            .cta-box {
-                background: linear-gradient(135deg, var(--dark) 0%, #334155 100%);
-                border-radius: 16px; padding: 40px; color: white; text-align: center;
-            }
-            .cta-box h3 { margin-bottom: 16px; }
-            .cta-box p { opacity: 0.8; margin-bottom: 24px; }
-            .cta-box .btn {
-                background: var(--primary); color: white; padding: 12px 32px;
-                border-radius: 8px; font-weight: 600; text-decoration: none;
-                display: inline-block; transition: all 0.3s ease;
-            }
-            .cta-box .btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
-        </style>
-    </head>
+        a { color: inherit; text-decoration: none; }
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <div class="wrapper">
-            <div class="sidebar">
-                <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
-                    <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Kavin Samiyappan" style="border-radius: 16px;">
-                    <h1 class="mt-2">Kavin Samiyappan</h1>
-                    <div class="mb-4" style="height: 22px;">
-                        <h4 class="typed-text-output d-inline-block text-body"></h4>
-                        <div class="typed-text d-none">Android Engineer, Module Owner, Jetpack Compose Expert, Product-minded Engineer</div>
-                    </div>
-                    <div class="d-flex justify-content-center mt-auto mb-3">
-                        <a class="mx-2" href="https://github.com/kavin511" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a class="mx-2" href="https://www.linkedin.com/in/kavin-samiyappan" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a> 
-                        <a class="mx-2" href="https://play.google.com/store/apps/dev?id=5245167820164346873" target="_blank" title="Play Store"><i class="fab fa-google-play"></i></a>
-                        <a class="mx-2" href="https://superwrite.app" target="_blank" title="Superwrite.app"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                    <div class="d-flex align-items-end justify-content-between">
-                        <a href="img/kavin_resume.pdf" class="btn btn-block border-right" download>Download CV</a>
-                        <a href="#contact" class="btn btn-block btn-scroll">Contact Me</a>
-                    </div>
-                </div>
-                <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
-                    <i class="fas fa-2x fa-angle-double-right text-primary"></i>
-                </div>
+        main {
+            max-width: 620px;
+            margin: 0 auto;
+            padding: clamp(80px, 16vh, 160px) 28px 100px;
+        }
+
+        /* entrance */
+        .fade { opacity: 0; transform: translateY(14px); animation: rise 0.9s cubic-bezier(.2,.7,.2,1) forwards; }
+        .d1 { animation-delay: .05s; } .d2 { animation-delay: .18s; }
+        .d3 { animation-delay: .32s; } .d4 { animation-delay: .46s; }
+        @keyframes rise { to { opacity: 1; transform: none; } }
+        @media (prefers-reduced-motion: reduce) { .fade { animation: none; opacity: 1; transform: none; } }
+
+        .kicker {
+            font-size: 0.82rem;
+            letter-spacing: 0.02em;
+            color: var(--muted);
+            margin-bottom: 34px;
+            display: flex; align-items: center; gap: 9px;
+        }
+        .dot {
+            width: 7px; height: 7px; border-radius: 50%;
+            background: #4ade80; box-shadow: 0 0 0 0 rgba(74,222,128,.5);
+            animation: pulse 2.4s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(74,222,128,.5); }
+            70% { box-shadow: 0 0 0 7px rgba(74,222,128,0); }
+            100% { box-shadow: 0 0 0 0 rgba(74,222,128,0); }
+        }
+
+        h1 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-weight: 400;
+            font-size: clamp(2.3rem, 6.5vw, 3.7rem);
+            line-height: 1.12;
+            letter-spacing: -0.01em;
+            margin-bottom: 30px;
+        }
+        h1 a {
+            color: var(--accent);
+            font-style: italic;
+            border-bottom: 1px solid rgba(165,176,255,0.3);
+            transition: border-color 0.25s;
+        }
+        h1 a:hover { border-color: var(--accent); }
+
+        .sub {
+            font-size: 1.06rem;
+            color: var(--muted);
+            max-width: 500px;
+            margin-bottom: 64px;
+        }
+        .sub a { color: var(--ink); border-bottom: 1px solid var(--line); transition: border-color .25s; }
+        .sub a:hover { border-color: var(--muted); }
+
+        .label {
+            font-size: 0.74rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-bottom: 8px;
+        }
+
+        .list { list-style: none; margin-bottom: 64px; }
+        .list li { border-top: 1px solid var(--line); }
+        .list li:last-child { border-bottom: 1px solid var(--line); }
+        .list a, .list .row {
+            display: flex; align-items: baseline; gap: 14px;
+            padding: 17px 4px; transition: padding 0.25s, color 0.25s;
+        }
+        .list a:hover { padding-left: 12px; }
+        .list .title { font-size: 1.02rem; color: var(--ink); white-space: nowrap; }
+        .list a:hover .title { color: var(--accent); }
+        .list .desc { font-size: 0.92rem; color: var(--muted); flex: 1; }
+        .list .ext { color: var(--faint); flex-shrink: 0; transition: transform .25s, color .25s; }
+        .list a:hover .ext { transform: translate(2px,-2px); color: var(--accent); }
+        @media (max-width: 520px) {
+            .list a, .list .row { flex-direction: column; gap: 3px; }
+            .list .ext { position: absolute; right: 4px; }
+            .list li { position: relative; }
+        }
+
+        footer .label { margin-bottom: 16px; }
+        .links { display: flex; flex-wrap: wrap; gap: 22px; }
+        .links a {
+            font-size: 0.95rem; color: var(--muted);
+            display: inline-flex; align-items: center; gap: 7px;
+            transition: color 0.25s;
+        }
+        .links a:hover { color: var(--ink); }
+        .links svg { width: 15px; height: 15px; }
+    </style>
+</head>
+<body>
+    <main>
+        <p class="kicker fade d1"><span class="dot"></span> Kavin Samiyappan — Android Engineer, Chennai</p>
+
+        <h1 class="fade d1">
+            I build Restaurant POS at Zoho, and ship <a href="https://play.google.com/store/apps/dev?id=5245167820164346873" target="_blank" rel="noopener">my own apps</a> on Google Play.
+        </h1>
+
+        <p class="sub fade d2">
+            I care about clean architecture, thoughtful UX, and software that holds up in production.
+            Mostly <a href="mailto:kavinalmighty@gmail.com">reachable by email</a>.
+        </p>
+
+        <section class="fade d3">
+            <p class="label">On Google Play</p>
+            <ul class="list">
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=com.devstudioworks.powerBattery.pro" target="_blank" rel="noopener">
+                        <span class="title">Power Battery</span>
+                        <span class="desc">Battery health, real charge speed & wear prediction.</span>
+                        <svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=com.pdfmaster.app" target="_blank" rel="noopener">
+                        <span class="title">PDF Master</span>
+                        <span class="desc">Scan, edit and manage PDFs on the go.</span>
+                        <svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=org.synthai.keyboard" target="_blank" rel="noopener">
+                        <span class="title">SuperWrite</span>
+                        <span class="desc">An AI keyboard with GPT built right in.</span>
+                        <svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=com.devstudio.expensemanager" target="_blank" rel="noopener">
+                        <span class="title">Expense Tracker</span>
+                        <span class="desc">A simple money manager for everyday spending.</span>
+                        <svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="fade d4">
+            <p class="label">Elsewhere</p>
+            <div class="links">
+                <a href="mailto:kavinalmighty@gmail.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                    Email
+                </a>
+                <a href="https://github.com/kavin511" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.3.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.92 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.42.36.82 1.1.82 2.22v3.3c0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/kavin-samiyappan" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://play.google.com/store/apps/dev?id=5245167820164346873" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8a1 1 0 0 0-.6.9v18.6a1 1 0 0 0 .6.9l10.9-10.2L3.6 1.8Zm12.4 8.3 2.9 1.7c.9.5.9 1.9 0 2.4l-2.9 1.7-3-2.9 3-2.9Zm-1.4 1.3-9.4 8.8 12-6.9-2.6-1.9Zm-9.4-9.6 9.4 8.8 2.6-1.9-12-6.9Z"/></svg>
+                    Google Play
+                </a>
+                <a href="img/kavin_resume.pdf" download>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+                    Résumé
+                </a>
             </div>
-            <div class="content">
-                <!-- Hero/About Start -->
-                <div class="container bg-white py-5">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <p class="section-subtitle">About Me</p>
-                            <h2 class="mb-4" style="font-size: 2rem; color: var(--dark);">Android Engineer & Module Owner building products used by thousands of merchants</h2>
-                        </div>
-                        <div class="col-12">
-                            <p style="font-size: 1.1rem; color: var(--gray); line-height: 1.8;">
-                                I'm an Android Engineer at <strong>Zoho Corporation</strong> where I own the Restaurant POS module end-to-end — from technical roadmap to release management. I don't wait for tickets; I identify problems and ship solutions. I was the first engineer to champion Jetpack Compose adoption on my team, built the design system that's now the standard, and improved our Play Store rating from 3.9 to 4.3 through a self-initiated feature.
-                            </p>
-                            <p style="font-size: 1.1rem; color: var(--gray); line-height: 1.8;">
-                                Outside work, I ship my own products — <a href="https://superwrite.app" target="_blank" style="color: var(--primary); font-weight: 500;">superwrite.app</a> is live in production.
-                            </p>
-                            <div class="row mt-4">
-                                <div class="col-sm-6 py-2"><span style="color: var(--gray);">📍</span> <strong>Chennai, India</strong></div>
-                                <div class="col-sm-6 py-2"><span style="color: var(--gray);">🎓</span> <strong>B.E. Computer Science</strong></div>
-                                <div class="col-sm-6 py-2"><span style="color: var(--gray);">📧</span> <a href="mailto:kavinalmighty@gmail.com" style="color: var(--primary);">kavinalmighty@gmail.com</a></div>
-                                <div class="col-sm-6 py-2"><span style="color: var(--gray);">📱</span> <strong>+91 6369866479</strong></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Impact Metrics -->
-                <div class="container bg-light py-5">
-                    <div class="row px-3">
-                        <div class="col-12 mb-4">
-                            <p class="section-subtitle">Impact</p>
-                            <h2 style="color: var(--dark);">Numbers that matter</h2>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <div class="highlight-card">
-                                <div class="metric">3.9→4.3</div>
-                                <div class="label">Play Store Rating</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <div class="highlight-card">
-                                <div class="metric">90%</div>
-                                <div class="label">CI/CD Build Time Reduced</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <div class="highlight-card">
-                                <div class="metric">100%</div>
-                                <div class="label">Memory Leaks Eliminated</div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <div class="highlight-card">
-                                <div class="metric">70%</div>
-                                <div class="label">API Load Time Optimized</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Self-Initiated Work -->
-                <div class="container bg-white py-5">
-                    <div class="row px-3">
-                        <div class="col-12 mb-4">
-                            <p class="section-subtitle">Self-Initiated</p>
-                            <h2 style="color: var(--dark);">I don't wait for tickets</h2>
-                            <p style="color: var(--gray);">These are problems I identified and solved on my own initiative — no one asked me to do them.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="initiative-card">
-                                <span class="badge">Product + Engineering</span>
-                                <h5>In-App Rating System</h5>
-                                <p>Owned PM and engineering. Designed non-intrusive UX with EWMA algorithm for optimal trigger timing. Result: Play Store rating improved from <strong>3.9 to 4.3</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="initiative-card">
-                                <span class="badge">Architecture</span>
-                                <h5>Jetpack Compose Adoption</h5>
-                                <p>First engineer to champion Compose on the team. Built design system and component library that's now the <strong>team standard</strong> for all new feature development.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="initiative-card">
-                                <span class="badge">Architecture</span>
-                                <h5>Hilt Dependency Injection</h5>
-                                <p>Replaced singleton pattern across modules. Eliminated <strong>100% of memory leaks</strong> and significantly improved testability.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="initiative-card">
-                                <span class="badge">DevEx / Infrastructure</span>
-                                <h5>Git Submodules Architecture</h5>
-                                <p>Unified 5+ external dependencies. Reduced <strong>CI/CD build time by 90%</strong> and eliminated version conflicts across the team.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skills -->
-                <div class="container bg-light py-5">
-                    <div class="row px-3">
-                        <div class="col-12 mb-4">
-                            <p class="section-subtitle">Technical Skills</p>
-                            <h2 style="color: var(--dark);">What I work with</h2>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <h6 style="color: var(--gray); margin-bottom: 12px;">Android Core</h6>
-                            <span class="skill-tag primary">Kotlin</span>
-                            <span class="skill-tag primary">Jetpack Compose</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">Activity</span>
-                            <span class="skill-tag">Services</span>
-                            <span class="skill-tag">BroadcastReceiver</span>
-                            <span class="skill-tag">ContentProvider</span>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <h6 style="color: var(--gray); margin-bottom: 12px;">Architecture</h6>
-                            <span class="skill-tag primary">CLEAN Architecture</span>
-                            <span class="skill-tag primary">MVVM</span>
-                            <span class="skill-tag">MVI</span>
-                            <span class="skill-tag">Multi-module</span>
-                            <span class="skill-tag">Hilt/Dagger</span>
-                            <span class="skill-tag">Room</span>
-                            <span class="skill-tag">Realm</span>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <h6 style="color: var(--gray); margin-bottom: 12px;">Performance & Tools</h6>
-                            <span class="skill-tag">Memory Optimization</span>
-                            <span class="skill-tag">Battery Optimization</span>
-                            <span class="skill-tag">Profiling</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">Git Submodules</span>
-                            <span class="skill-tag">CameraX</span>
-                        </div>
-                        <div class="col-12">
-                            <h6 style="color: var(--gray); margin-bottom: 12px;">Integration</h6>
-                            <span class="skill-tag">REST APIs</span>
-                            <span class="skill-tag">Firebase</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Payment Gateways</span>
-                            <span class="skill-tag">Analytics SDKs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience -->
-                <div class="container bg-white py-5">
-                    <div class="row px-3">
-                        <div class="col-12 mb-4">
-                            <p class="section-subtitle">Experience</p>
-                            <h2 style="color: var(--dark);">Where I've worked</h2>
-                        </div>
-                        <div class="col-12">
-                            <div class="timeline-item">
-                                <div class="date">Jun 2022 – Present</div>
-                                <div class="title">Member Technical Staff — Module Owner, Restaurant POS</div>
-                                <div class="company">Zoho Corporation, Chennai (joined via Gofrugal Technologies acquisition)</div>
-                                <ul>
-                                    <li><strong>Own end-to-end product quality, architecture, and delivery</strong> for Restaurant POS module</li>
-                                    <li>Grew from founding engineer to module owner through consistent delivery and technical leadership</li>
-                                    <li>Architected core POS features (Ordering, Invoicing, Transactions, Dynamic QR Payments) using CLEAN architecture</li>
-                                    <li>Designed plugin-based module system enabling 3 apps to share common components, reducing code duplication by 40%</li>
-                                    <li>Migrated legacy barcode scanner to CameraX API, improving reliability and reducing ANRs</li>
-                                    <li>Mentor junior engineers on architecture patterns and modern Android practices</li>
-                                </ul>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="date">Jun 2021 – Jun 2022</div>
-                                <div class="title">Software Engineer Intern</div>
-                                <div class="company">Gofrugal Technologies, Chennai</div>
-                                <ul>
-                                    <li>Optimized API response parsing, reducing load time by 70%</li>
-                                    <li>Built responsive layouts ensuring consistent UX across phone and tablet configurations</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projects -->
-                <div class="container bg-light py-5">
-                    <div class="row px-3">
-                        <div class="col-12 mb-4">
-                            <p class="section-subtitle">Projects</p>
-                            <h2 style="color: var(--dark);">What I've built</h2>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="project-card">
-                                <div class="project-content">
-                                    <div class="project-type">Live Product</div>
-                                    <h5>superwrite.app</h5>
-                                    <p>A writing productivity tool I independently built and shipped. Live in production with real users.</p>
-                                    <a href="https://superwrite.app" target="_blank" class="project-link">Visit Site <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="project-card">
-                                <div class="project-content">
-                                    <div class="project-type">Work — Zoho</div>
-                                    <h5>Zoho POS (Restaurant)</h5>
-                                    <p>Full-featured restaurant billing application serving thousands of merchants. I own this module end-to-end.</p>
-                                    <a href="https://play.google.com/store/apps/dev?id=5245167820164346873" target="_blank" class="project-link">View on Play Store <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CTA -->
-                <div class="container bg-white py-5">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <div class="cta-box">
-                                <h3>Let's build something great together</h3>
-                                <p>I'm open to discussing Android engineering roles, especially those involving scale, architecture ownership, and product impact.</p>
-                                <a href="mailto:kavinalmighty@gmail.com" class="btn">Get in Touch</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact -->
-                <div class="container bg-light py-5" id="contact">
-                    <div class="row px-3">
-                        <div class="col-12 mb-4">
-                            <p class="section-subtitle">Contact</p>
-                            <h2 style="color: var(--dark);">Send me a message</h2>
-                        </div>
-                        <div class="col-12">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="form-row">
-                                        <div class="control-group col-sm-6">
-                                            <input type="text" class="form-control p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="control-group col-sm-6">
-                                            <input type="email" class="form-control p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Footer -->
-                <div class="container-fluid bg-white pt-5 px-0">
-                    <div class="container bg-dark text-light text-center py-5" style="border-radius: 16px 16px 0 0;">
-                        <div class="d-flex justify-content-center mb-4">                                            
-                            <a class="btn btn-outline-primary btn-square mr-2" href="https://www.linkedin.com/in/kavin-samiyappan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-2" href="https://github.com/kavin511" target="_blank"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-2" href="https://play.google.com/store/apps/dev?id=5245167820164346873" target="_blank"><i class="fab fa-google-play"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-2" href="https://superwrite.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                        <p style="opacity: 0.7; margin-bottom: 0;">© 2025 Kavin Samiyappan. Built with ☕ and Kotlin vibes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+        </footer>
+    </main>
+</body>
 </html>
